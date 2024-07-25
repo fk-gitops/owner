@@ -12,14 +12,14 @@ spec:
       sourceRef:
         kind: GitRepository
         name: ownerhelmrepo2
-        namespace: owner2
+        namespace: owner
       version: 1.0.0
   install:
     remediation:
       retries: 3
   interval: 5m0s
   releaseName: ownerhelmrelease2
-  targetNamespace: owner2
+  targetNamespace: owner
   timeout: 2m0s
   upgrade:
     remediation:
@@ -46,7 +46,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
   name: ownerhelmrepo2
-  namespace: owner2
+  namespace: owner
 spec:
   interval: 1m0s
   ref:
