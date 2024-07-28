@@ -5,5 +5,5 @@ resources:
   - deployment1
   - helmrelease1
   - helmrelease2
-  - helmrelease3
+  # - helmrelease3
   - namespaces
