@@ -19,7 +19,7 @@ spec:
       retries: 3
   interval: 5m0s
   releaseName: ownerhelmrelease3
-  targetNamespace: owner
+  targetNamespace: owner2
   timeout: 2m0s
   upgrade:
     remediation:
