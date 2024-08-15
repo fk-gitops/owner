@@ -28,7 +28,7 @@ spec:
     enable: true
   values:
     image:
-      repository: nginxabc
+      repository: nginx
       pullPolicy: IfNotPresent
       tag: "1.19"
     nameOverride: ""
