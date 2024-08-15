@@ -13,7 +13,7 @@ spec:
         kind: GitRepository
         name: ownerhelmrepojob
         namespace: owner
-      version: 1.0.7
+      version: 1.0.16
   install:
     remediation:
       retries: 3
@@ -41,14 +41,3 @@ spec:
     service:
       type: ClusterIP
       port: 80
----
-apiVersion: source.toolkit.fluxcd.io/v1
-kind: GitRepository
-metadata:
-  name: ownerhelmrepojob
-  namespace: owner
-spec:
-  interval: 1m0s
-  ref:
-    tag: 1.0.7
-  url: https://github.com/fk-gitops/helm-repo
