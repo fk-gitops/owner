@@ -28,15 +28,15 @@ spec:
     enable: true
   values:
     image:
-      repository: nginx
+      repository: nginxabc
       pullPolicy: IfNotPresent
       tag: "1.19"
     nameOverride: ""
     fullnameOverride: ""
     replicaCount: 1
-    serviceAccount: 
-      create: true 
-      annotations: {} 
+    serviceAccount:
+      create: true
+      annotations: {}
       name: ""
     service:
       type: ClusterIP
