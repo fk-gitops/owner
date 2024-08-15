@@ -1,5 +1,5 @@
 ---
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
+apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: ownerhelmrelease3
@@ -34,9 +34,9 @@ spec:
     nameOverride: ""
     fullnameOverride: ""
     replicaCount: 1
-    serviceAccount: 
-      create: true 
-      annotations: {} 
+    serviceAccount:
+      create: true
+      annotations: {}
       name: ""
     service:
       type: ClusterIP
