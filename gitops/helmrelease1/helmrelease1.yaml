@@ -7,7 +7,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: ./ownerapp
+      chart: ./nginxapp
       interval: 1m0s
       sourceRef:
         kind: GitRepository
