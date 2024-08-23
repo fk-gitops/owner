@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: ./nginxapp2
-      interval: 1m0s
+      interval: 10m0s
       sourceRef:
         kind: GitRepository
         name: ownerhelmrepo
@@ -17,10 +17,10 @@ spec:
   install:
     remediation:
       retries: 3
-  interval: 5m0s
+  interval: 10m0s
   releaseName: ownerhelmrelease1
   targetNamespace: owner
-  timeout: 2m0s
+  timeout: 10m0s
   upgrade:
     remediation:
       retries: 3

@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: ./job1
-      interval: 1m0s
+      interval: 10m0s
       sourceRef:
         kind: GitRepository
         name: ownerhelmrepojob
@@ -17,10 +17,10 @@ spec:
   install:
     remediation:
       retries: 3
-  interval: 2m0s
+  interval: 10m0s
   releaseName: ownerhelmreleasejob
   targetNamespace: owner
-  timeout: 1m0s
+  timeout: 10m0s
   upgrade:
     remediation:
       retries: 3

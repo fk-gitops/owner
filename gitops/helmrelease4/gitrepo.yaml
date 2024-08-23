@@ -5,7 +5,7 @@ metadata:
   name: ownerhelmrepojob
   namespace: owner
 spec:
-  interval: 1m0s
+  interval: 10m0s
   ref:
     tag: 1.0.22
   url: https://github.com/fk-gitops/helm-repo
