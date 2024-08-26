@@ -13,7 +13,7 @@ spec:
         kind: GitRepository
         name: ownerhelmrepo
         namespace: owner
-      version: 1.0.30
+      version: 1.0.31
   install:
     remediation:
       retries: 3
@@ -50,5 +50,5 @@ metadata:
 spec:
   interval: 60m0s
   ref:
-    tag: 1.0.30
+    tag: 1.0.31
   url: https://github.com/fk-gitops/helm-repo
