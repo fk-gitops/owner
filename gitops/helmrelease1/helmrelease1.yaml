@@ -8,19 +8,19 @@ spec:
   chart:
     spec:
       chart: ./nginxapp2
-      interval: 10m0s
+      interval: 30m0s
       sourceRef:
         kind: GitRepository
         name: ownerhelmrepo
         namespace: owner
-      version: 1.0.1
+      version: 1.0.22
   install:
     remediation:
       retries: 3
-  interval: 10m0s
+  interval: 30m0s
   releaseName: ownerhelmrelease1
   targetNamespace: owner
-  timeout: 10m0s
+  timeout: 30m0s
   upgrade:
     remediation:
       retries: 3
@@ -48,7 +48,7 @@ metadata:
   name: ownerhelmrepo
   namespace: owner
 spec:
-  interval: 1m0s
+  interval: 30m0s
   ref:
-    tag: 1.0.0
+    tag: 1.0.22
   url: https://github.com/fk-gitops/helm-repo
