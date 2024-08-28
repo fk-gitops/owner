@@ -13,7 +13,7 @@ spec:
         kind: GitRepository
         name: ownerhelmrepo
         namespace: owner
-      version: 1.0.34
+      version: 1.0.44
   install:
     remediation:
       retries: 3
