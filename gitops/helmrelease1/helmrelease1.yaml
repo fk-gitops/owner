@@ -50,5 +50,5 @@ metadata:
 spec:
   interval: 5m0s
   ref:
-    tag: 1.0.34
+    tag: 1.0.35
   url: https://github.com/fk-gitops/helm-repo
